@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Universe Hub</title>
+
+    <!-- daisyUI CND link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <header class="container mx-auto">
+        <section class="flex justify-center items-center flex-col my-10 space-y-5">
+            <h1 class="text-3xl font-bold">AI Universe Hub</h1>
+            <button class="p-4 bg-red-700 text-white text-lg rounded-lg">Sort By Date</button>
+        </section>
+    </header>
+    <main class="container mx-auto">
+        <section class="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="card-container">
+
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="showDetails.showModal()">open modal</button> -->
+            <dialog id="showDetails" class="modal">
+                <div class="modal-box w-11/12 max-w-5xl">
+                    <div id="details-container">
+                      
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+
+            <!-- modal html  -->
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
